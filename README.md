@@ -1,6 +1,6 @@
-# Project Name
+BetaCritic Movie Details & Credits
 
-> Project description
+> A clone of the metacritic movie details & credits component
 
 ## Related Projects
 
