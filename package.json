@@ -7,9 +7,12 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "build": "webpack --watch",
-    "start": "nodemon ./server/server.js",
-    "db": "node database/seed.js"
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js",
+    "db": "node database/seed.js",
+    "lint": "eslint --env browser,jest \"**/*.js\"",
+    "test-dev": "jest --watchAll --detectOpenHandles --forceExit",
+    "test": "NODE_ENV=testing jest"
   },
   "dependencies": {
     "react": "^16.8.1",
@@ -29,7 +32,9 @@
     "webpack-cli": "^3.2.3",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "faker": "^4.1.0",
+    "imdb-api": "^4.0.2"
   },
   "version": "1.0.0",
   "main": "index.js",
