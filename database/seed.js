@@ -136,8 +136,6 @@ function seedDetails() {
     //console.log(detail)
     Details.save(detail);
   }
-
-
 };
 seedDetails();
 
