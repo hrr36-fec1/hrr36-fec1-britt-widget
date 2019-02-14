@@ -1,6 +1,5 @@
 
-const db = require('./index.js');
-const Details = require('./index.js');
+const {db, Details} = require('./index.js');
 
 
 
@@ -128,11 +127,11 @@ function seedDetails() {
       genre: ["Drama", "Comedy"],
       rating: "R",
       runtime: "115 min"
-    }
+    },
     {
       title: "Bridesmaids",
       production: "Universal Pictures",
-      release_date: "May 13, 2011",
+      release_date: "Release Date: May 13, 2011",
       starring: ["Kristen Wiig", "Maya Rudolph", "Rose Byrne"],
       summary: "Annie's life is a mess. But when she finds out her lifetime best friend is engaged, she simply must serve as Lillian's maid of honor. Though lovelorn and broke, Annie bluffs her way through the expensive and bizarre rituals. With one chance to get it perfect, she'll show Lillian and her bridesmaids just how far you'll go for someone you love.",
       director: "Paul Feig",
@@ -146,6 +145,7 @@ function seedDetails() {
 
     //console.log(detail)
     Details.save(detail);
+    return db.disconnect();
   }
 };
 seedDetails();

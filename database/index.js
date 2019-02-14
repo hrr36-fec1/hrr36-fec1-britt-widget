@@ -46,6 +46,8 @@ let save = (results) => {
 
 
 
-module.exports = db;
-module.exports = Details;
-module.exports.save = save;
+module.exports = {
+  db,
+  Details,
+  save
+}
