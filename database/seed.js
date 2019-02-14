@@ -75,15 +75,15 @@ function seedDetails() {
       runtime: "113 min"
     },
     {
-      title: "Boys Don't Cry",
-      production: "Fox Searchlight Pictures",
-      release_date: "Release Date: October 8, 1999",
-      starring: ["Chloë Sevigny", "Hilary Swank"],
-      summary: "Based on a true story, Brandon Teena (Swank) is the popular new guy in a tiny Nebraska town and falls in love with local girl Lana (Sevigny). When it is revealed that Brandon is actually a woman, Lana's family and friends put Brandon's life in jeopardy.",
-      director: "Kimberly Peirce",
-      genre: ["Drama", "Romance", "Crime"],
-      rating: "TV-MA",
-      runtime: "118 min"
+      title: "Hackers",
+      production: "MGM/UA Distribution Company",
+      release_date: "Release Date: September 15, 1995",
+      starring: ["Angelina Jolie", "Jonny Lee Miller"],
+      summary: "A neophyte hacker becomes the target of the FBI after he unknowingly taps into a high-tech embezzling scheme which could cause a horrific environmental disaster in this suspenseful drama.",
+      director: "",
+      genre: ["Action", "Crime", "Thriller"],
+      rating: "PG-13",
+      runtime: "107 min"
     },
     {
       title: "The Favourite",
@@ -128,6 +128,17 @@ function seedDetails() {
       genre: ["Drama", "Comedy"],
       rating: "R",
       runtime: "115 min"
+    }
+    {
+      title: "Bridesmaids",
+      production: "Universal Pictures",
+      release_date: "May 13, 2011",
+      starring: ["Kristen Wiig", "Maya Rudolph", "Rose Byrne"],
+      summary: "Annie's life is a mess. But when she finds out her lifetime best friend is engaged, she simply must serve as Lillian's maid of honor. Though lovelorn and broke, Annie bluffs her way through the expensive and bizarre rituals. With one chance to get it perfect, she'll show Lillian and her bridesmaids just how far you'll go for someone you love.",
+      director: "Paul Feig",
+      genre: ["Comedy"],
+      rating: "R",
+      runtime: "125 min"
     }
   ]
 
