@@ -8,6 +8,7 @@ db.once('open', function() { console.log('DATABASE OPEN');});
 
 
 let detailsSchema = mongoose.Schema({
+  url: String,
   title: String,
   production: String,
   release_date: Date,
@@ -25,6 +26,7 @@ let save = (results) => {
 
   //instantiate new instance of the collection & build out entry w/cols set below
   let movieDetails = new Details ({
+    url: results.url,
     title: results.title,
     production: results.production,
     release_date: results.release_date,
@@ -40,8 +42,10 @@ let save = (results) => {
     if (err) {
       console.log('err saving new movie details to db')
       return handleError(err);
+
     }
   });
+
 };
 
 

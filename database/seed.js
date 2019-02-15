@@ -1,5 +1,5 @@
 
-const {db, Details} = require('./index.js');
+const db = require('./index.js');
 
 
 
@@ -8,6 +8,7 @@ function seedDetails() {
 
   const details = [
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Jurassic+Park.jpg",
       title: "Jurassic Park",
       production: "Universal Pictures",
       release_date: "Release Date: June 11,1993",
@@ -19,6 +20,7 @@ function seedDetails() {
       runtime: "127 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Reality+Bites.jpg",
       title: "Reality Bites",
       production: "Universal Pictures",
       release_date: "Release Date: February 18, 1994",
@@ -30,6 +32,7 @@ function seedDetails() {
       runtime: "99 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Atomic+Blonde.jpg",
       title: "Atomic Blonde",
       production: "Focus Features",
       release_date: "Release Date: July 28, 2017",
@@ -41,6 +44,7 @@ function seedDetails() {
       runtime: "115 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Magnolia.jpg",
       title: "Magnolia",
       production: "New Line Cinema",
       release_date: "Release Date: December 17, 1999",
@@ -52,6 +56,7 @@ function seedDetails() {
       runtime: "188 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Molly's+Game.jpg",
       title: "Molly's Game",
       production: "STX Entertainment",
       release_date: "Release Date: December 25, 2017",
@@ -63,6 +68,7 @@ function seedDetails() {
       runtime: "140 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Donnie+Darko.jpg",
       title: "Donnie Darko",
       production: "New Market Films",
       release_date: "Release Date: October 26, 2001",
@@ -74,6 +80,7 @@ function seedDetails() {
       runtime: "113 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Hackers.jp",
       title: "Hackers",
       production: "MGM/UA Distribution Company",
       release_date: "Release Date: September 15, 1995",
@@ -85,6 +92,7 @@ function seedDetails() {
       runtime: "107 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/The+Favourite.jpg",
       title: "The Favourite",
       production: "Fox Searchlight Pictures",
       release_date: "Release Date: November 23, 2018",
@@ -96,6 +104,7 @@ function seedDetails() {
       runtime: "119 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/The+Lost+Boys.jpg",
       title: "The Lost Boys",
       production: "Warner Bros. Pictures",
       release_date: "Release Date: July 31, 1987",
@@ -107,6 +116,7 @@ function seedDetails() {
       runtime: "97 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Kill+Bill.jpg",
       title: "Kill Bill: Vol. 1",
       production: "Miramax Films",
       release_date: "Release Date: October 10, 2003",
@@ -118,6 +128,7 @@ function seedDetails() {
       runtime: "111 min"
     },
     {
+      url:"https://s3-us-west-2.amazonaws.com/bzfec/The+Anniversary+Party.jpg",
       title: "The Anniversary Party",
       production: "Fine Line Features",
       release_date: "Release Date: June 8, 2001",
@@ -129,6 +140,7 @@ function seedDetails() {
       runtime: "115 min"
     },
     {
+      url: "https://s3-us-west-2.amazonaws.com/bzfec/Bridesmaids.jpg",
       title: "Bridesmaids",
       production: "Universal Pictures",
       release_date: "Release Date: May 13, 2011",
@@ -144,7 +156,7 @@ function seedDetails() {
   for (detail of details) {
 
     //console.log(detail)
-    Details.save(detail);
+    db.save(detail);
     return db.disconnect();
   }
 };
