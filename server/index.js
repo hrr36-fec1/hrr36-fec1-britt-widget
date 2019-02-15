@@ -13,13 +13,24 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../')));
 
 
-app.get('/api/movies/details', function (req, res) {
-   Details.find().exec()
+// app.get('/api/movies/details', function (req, res) {
+//    Details.find().exec()
+//    .then(results => {
+//     if (!results){
+//       return res.status(500).send({})
+//     }
+//     //console.log(results);
+//     return res.status(200).send(results);
+//   })
+// });
+
+app.get('/api/movies/details/jurassic-park', function (req, res) {
+   Details.find({ title: "Jurassic Park"}).exec()
    .then(results => {
     if (!results){
       return res.status(500).send({})
     }
-    console.log(results);
+    //console.log(results);
     return res.status(200).send(results);
   })
 });
