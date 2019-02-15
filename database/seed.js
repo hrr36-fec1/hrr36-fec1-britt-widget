@@ -12,7 +12,7 @@ function seedDetails() {
       title: "Jurassic Park",
       production: "Universal Pictures",
       release_date: "Release Date: June 11,1993",
-      starring: ["Jeff Goldblum", "Laura Dern", "Richard Attenborough", "Sam Neill"],
+      starring: ["Jeff Goldblum, " , "Laura Dern, ", "Richard Attenborough, ", "Sam Neill"],
       summary: "Featuring incredible special effects and action-packed drama, Jurassic Park takes you to a remote island where an amazing theme park with living dinosaurs is about to turn deadly, as five people must battle to survive among the prehistoric predators.",
       director: "Steven Spielberg",
       genre: ["Adventure", "Sci-Fi", "Thriller"],
@@ -157,7 +157,7 @@ function seedDetails() {
 
     //console.log(detail)
     db.save(detail);
-    return db.disconnect();
+    //return db.disconnect();
   }
 };
 seedDetails();

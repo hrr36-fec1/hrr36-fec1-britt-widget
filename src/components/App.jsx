@@ -11,7 +11,7 @@ class App extends React.Component {
     super ();
 
     this.state = {
-      movie: [{title: "", }]
+      movie: [{url: "", title: "", production: "", release_date: "", summary: "", director: "", rating: "", runtime: "", genre: "", starring: ""}]
 
     }
 
@@ -22,6 +22,7 @@ class App extends React.Component {
 
     this.getMovieDetails();
   }
+
 
   getMovieDetails(){
     $.ajax({
@@ -46,7 +47,7 @@ class App extends React.Component {
 render() {
     return (
       <div>
-        <h1>Movie Details Widget!</h1>
+        <h1></h1>
         <MovieDetailsCredits movie={this.state.movie}/>
       </div>
 
