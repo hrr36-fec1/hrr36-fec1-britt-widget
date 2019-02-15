@@ -6,7 +6,7 @@ const MovieDetailsCredits = (props) => (
   <div className="main">
     <h1>Movie Details & Credits</h1>
       <img src={props.movie[0].url} div className="movie-image" />
-      <div className="rating-block">{props.movie[0].rating}</div>
+      <img src={props.movie[0].rating_url} div className="rating-block" />
       <div className="prod-release">{props.movie[0].production} | Release Date: {moment(props.movie[0].release_date).format('MMMM Do YYYY')}</div>
       <div className="starring">
         <h3>Starring: </h3>

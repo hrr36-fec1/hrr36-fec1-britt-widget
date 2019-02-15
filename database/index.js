@@ -17,7 +17,8 @@ let detailsSchema = mongoose.Schema({
   director: String,
   genre: [String],
   rating: String,
-  runtime: String
+  runtime: String,
+  rating_url: String
 });
 
 let Details = mongoose.model('Details', detailsSchema);
@@ -35,7 +36,8 @@ let save = (results) => {
     director: results.director,
     genre: results.genre,
     rating: results.rating,
-    runtime: results.runtime
+    runtime: results.runtime,
+    rating_url: results.rating_url
   });
   //console.log(movieDetails)
   movieDetails.save(function(err) {
