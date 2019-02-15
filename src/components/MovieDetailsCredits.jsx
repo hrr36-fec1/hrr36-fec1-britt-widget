@@ -4,7 +4,7 @@ import React from 'react';
 
 const MovieDetailsCredits = (props) => (
   <div className="main" >
-    <div className="movie-title">{props.movie.title}</div>
+    <div className="movie-title">{props.movie[0].title}</div>
   </div>
 );
 

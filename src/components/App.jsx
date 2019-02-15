@@ -11,17 +11,19 @@ class App extends React.Component {
     super ();
 
     this.state = {
-      movie: []
+      movie: [{title: "", }]
+
     }
 
    this.getMovieDetails = this.getMovieDetails.bind(this);
   }
 
   componentDidMount(){
+
     this.getMovieDetails();
   }
 
-  getMovieDetails() {
+  getMovieDetails(){
     $.ajax({
       url: 'http://localhost:3002/api/movies/details/jurassic-park',
       method: 'GET',
@@ -37,7 +39,6 @@ class App extends React.Component {
         console.log('error in GET req from client');
       }
     })
-
   }
 
 
