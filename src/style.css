@@ -1,0 +1,50 @@
+
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: Helvetica,Arial,sans-serif;
+  color: 333333;
+}
+
+@media all and (min-width: 600px) {
+   We tell both sidebars to share a row
+  .aside-1 { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars
+   */
+  .details { flex: 2 0px; }
+  .aside-1 { order: 1; }
+  .details    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+.image {
+  width: 140px;
+  height: 212px;
+  border-top: 20px;
+  padding: 20px;
+  padding-top: 45px;
+}
+
+.details {
+  width: 494px;
+  height: 438px;
+
+}
+
+
+
+
+
+.rating-block {
+  height: 1.2rem;
+  margin-right: .4rem;
+  vertical-align: middle;
+}
+
+
