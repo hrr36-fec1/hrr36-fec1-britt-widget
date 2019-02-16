@@ -11,14 +11,20 @@ const MovieDetailsCredits = (props) => (
         </div>
 
         <div className="details">
+          <div className="top-section">
           <h1>Movie Details & Credits</h1>
 
-          <img src={props.movie[0].rating_url} div className="rating-block" />
-          <div className="prod-release">{props.movie[0].production} | Release Date: {moment(props.movie[0].release_date).format('MMMM Do YYYY')}</div>
-          <div className="starring">
-            <h3>Starring: </h3>
-              <span>{props.movie[0].starring}</span>
+            <div className="sec-1">
+              <img src={props.movie[0].rating_url} id="rating-block" className="col"/>
+              <div className="col" id="prod-release">{props.movie[0].production} | Release Date: {moment(props.movie[0].release_date).format('MMMM Do YYYY')}</div>
+            </div>
           </div>
+
+        <div className="starring">
+          <span id="star-h">Starring: </span>
+          <span id="actors" >{props.movie[0].starring}</span>
+        </div>
+
           <div className="summary">
             <h3>Summary: </h3>
               <span>{props.movie[0].summary}</span>
