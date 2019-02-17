@@ -5,8 +5,12 @@ const moment = require('moment');
 const MovieDetailsCredits = (props) => (
 
   <div className="main">
-  <img src="https://s3-us-west-2.amazonaws.com/bzfec/socialbar.png" className="social"/>
-    <div className="flex-container">
+
+      <img src="https://s3-us-west-2.amazonaws.com/bzfec/socialbar.png" className="social"/>
+
+
+
+      <div className="flex-container">
 
       <div className="movie-image">
         <img src={props.movie[0].url} div className="image" />
@@ -35,7 +39,7 @@ const MovieDetailsCredits = (props) => (
 
         <div className="director">
           <span className="heading">Director: </span>
-          <span>{props.movie[0].director}</span>
+          <span id="direct">{props.movie[0].director}</span>
         </div>
 
         <div className="genre">
