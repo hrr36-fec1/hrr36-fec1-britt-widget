@@ -21,31 +21,37 @@ const MovieDetailsCredits = (props) => (
           </div>
 
         <div className="starring">
-          <span id="star-h">Starring: </span>
+          <span className="heading">Starring: </span>
           <span id="actors" >{props.movie[0].starring}</span>
         </div>
 
-          <div className="summary">
-            <h3>Summary: </h3>
-              <span>{props.movie[0].summary}</span>
-          </div>
-          <div className="director">
-            <h3>Director: </h3>
-              <div>{props.movie[0].director}</div>
-          </div>
-          <div className="genre">
-            <h3>Genre(s): </h3>
-              <div>{props.movie[0].genre}</div>
-          </div>
-          <div className="rating">
-            <h3>Rating: </h3>
-              <div>{props.movie[0].rating}</div>
-          </div>
-          <div className="runtime">
-            <h3>Runtime: </h3>
-              <div>{props.movie[0].runtime}</div>
-          </div>
-        <div className="footer">See All Details and Credits</div>
+
+        <div className="summary">
+          <span className="heading">Summary: </span>
+          <span>{props.movie[0].summary}</span>
+        </div>
+
+        <div className="director">
+          <span className="heading">Director: </span>
+          <span>{props.movie[0].director}</span>
+        </div>
+
+        <div className="genre">
+          <span className="heading">Genre(s): </span>
+          <span>{props.movie[0].genre}</span>
+        </div>
+
+        <div className="rating">
+          <span className="heading">Rating: </span>
+          <span>{props.movie[0].rating}</span>
+        </div>
+
+        <div className="runtime">
+          <span className="heading">Runtime: </span>
+          <span>{props.movie[0].runtime}</span>
+        </div>
+
+        <div className="heading" id="footer">See All Details and Credits</div>
 
       </div>
     </div>

@@ -32,7 +32,7 @@
 }
 
 .details {
-  width: 494px;
+  width: 480px;
   height: 438px;
 
 }
@@ -79,22 +79,68 @@ h1 {
 
 .starring {
   width: 500px;
-  height: 67px;
+  height: 55px;
   padding: .10rem 0;
   flex-flow: row wrap;
-  display: inline;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
-#star-h {
+.heading {
   font-weight: bold;
-
-}
-
-#actors {
-
 }
 
 
+.summary {
+  width: 500px;
+  height: 90px;
+  font-size: .95rem;
+  padding: .4rem 0;
+  flex-flow: row wrap;
+  display: inline-block;
+}
+
+.director {
+  width: 500px;
+  height: 15px;
+  font-size: .95rem;
+  padding: .1rem 0;
+  flex-flow: row wrap;
+  display: inline-block;
+}
+
+.genre {
+  width: 500px;
+  height: 15px;
+  font-size: .95rem;
+  padding: .1rem 0;
+  flex-flow: row wrap;
+  display: inline-block;
+}
+
+.rating {
+  width: 500px;
+  height: 15px;
+  font-size: .95rem;
+  padding: .1rem 0;
+  flex-flow: row wrap;
+  display: inline-block;
+}
+
+.runtime {
+  width: 500px;
+  height: 15px;
+  font-size: .95rem;
+  padding: .1rem 0;
+  flex-flow: row wrap;
+  display: inline-block;
+}
+
+#footer {
+  height: 40px;
+  border-top: 40px;
+  padding: 1rem 0;
+}
 
 
 
