@@ -3,7 +3,9 @@ const moment = require('moment');
 
 
 const MovieDetailsCredits = (props) => (
+
   <div className="main">
+  <img src="https://s3-us-west-2.amazonaws.com/bzfec/socialbar.png" className="social"/>
     <div className="flex-container">
 
       <div className="movie-image">

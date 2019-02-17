@@ -1,11 +1,21 @@
 
 
+.social {
+  padding-left: 11.5%;
+  width: 498px;
+  height: 44px;
+  padding-bottom: 15px;
+
+}
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;
   font-family: Helvetica,Arial,sans-serif;
   color: 333333;
+  padding-left: 10%;
 }
+
 
 @media all and (min-width: 600px) {
    We tell both sidebars to share a row
@@ -23,18 +33,21 @@
   .footer  { order: 4; }
 }
 
+
 .image {
   width: 140px;
   height: 212px;
   border-top: 20px;
   padding: 20px;
   padding-top: 10px;
+  float: left;
 }
 
 .details {
-  width: 480px;
+  width: 450px;
   height: 438px;
-
+  text-align: left;
+  max-width: 500px;
 }
 
 .top-section {
@@ -51,9 +64,10 @@ h1 {
 
 
 .sec-1 {
-  width: 460px:
+  width: 500px:
   height: 19px;
-  padding: .2rem 0;
+  padding: .1rem 0;
+  display: inline-block;
 }
 
 #rating-block {
@@ -64,16 +78,21 @@ h1 {
 }
 
 .col {
-  float: left;
+
   width: 40%;
   padding: 5px;
+  display: inline-block;
 }
 
-.sec-1::after {
+#prod-release {
+  display: inline;
+}
+
+/*.sec-1::after {
   content: "";
   clear: both;
   display: table;
-}
+}*/
 
 
 
