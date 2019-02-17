@@ -2,15 +2,18 @@ import React from 'react';
 const moment = require('moment');
 
 
-const MovieDetailsCredits = (props) => (
+const MovieDetailsCredits = (props) => {
 
-  <div className="main">
+   const actors = props.movie[0].starring.map((actor, key) =>
+    <span className="star" key={actor}>{actor}</span>
+    );
 
-      <img src="https://s3-us-west-2.amazonaws.com/bzfec/socialbar.png" className="social"/>
+  return (
+    <div className="main">
 
+    <img src="https://s3-us-west-2.amazonaws.com/bzfec/socialbar.png" className="social"/>
 
-
-      <div className="flex-container">
+  <div className="flex-container">
 
       <div className="movie-image">
         <img src={props.movie[0].url} div className="image" />
@@ -28,7 +31,7 @@ const MovieDetailsCredits = (props) => (
 
         <div className="starring">
           <span className="heading">Starring: </span>
-          <span id="actors" >{props.movie[0].starring}</span>
+          <span>{actors}</span>
         </div>
 
 
@@ -62,10 +65,14 @@ const MovieDetailsCredits = (props) => (
       </div>
     </div>
   </div>
-);
+  )
+}
+
 
 export default MovieDetailsCredits;
 
+
+//<span id="actors" >{props.movie[0].starring}</span>
 
 // <div className="create-editor">
 //       <h2>AUTHOR</h2>
