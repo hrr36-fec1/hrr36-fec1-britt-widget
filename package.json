@@ -11,26 +11,36 @@
     "start": "nodemon server/index.js",
     "db": "node database/seed.js",
     "lint": "eslint --env browser,jest \"**/*.js\"",
-    "test-dev": "jest --watchAll --detectOpenHandles --forceExit",
+    "test-dev": "jest --watchAll",
     "test": "NODE_ENV=testing jest"
   },
   "dependencies": {
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "body-parser": "^1.17.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "jquery": "^3.1.1",
     "mongoose": "^4.13.18",
     "mongoose-unique-validator": "^2.0.2",
-    "jquery": "^3.1.1",
-    "body-parser": "^1.17.0"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.5",
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "eslint-config-airbnb": "^17.1.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "imdb-api": "^4.0.2",
+    "jest": "^24.1.0",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "path": "^0.12.7",
