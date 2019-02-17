@@ -4,7 +4,7 @@ const moment = require('moment');
 
 const MovieDetailsCredits = (props) => {
 
-   const actors = props.movie[0].starring.map((actor, key) =>
+  const actors = props.movie[0].starring.map((actor, key) =>
     <span className="star" key={actor}>{actor}</span>
     );
 
@@ -13,27 +13,26 @@ const MovieDetailsCredits = (props) => {
 
     <img src="https://s3-us-west-2.amazonaws.com/bzfec/socialbar.png" className="social"/>
 
-  <div className="flex-container">
+    <div className="flex-container">
 
       <div className="movie-image">
         <img src={props.movie[0].url} div className="image" />
-        </div>
+      </div>
 
-        <div className="details">
-          <div className="top-section">
+      <div className="details">
+        <div className="top-section">
           <h1>Movie Details & Credits</h1>
 
-            <div className="sec-1">
-              <img src={props.movie[0].rating_url} id="rating-block" className="col"/>
-              <div className="col" id="prod-release">{props.movie[0].production} | Release Date: {moment(props.movie[0].release_date).format('MMMM Do YYYY')}</div>
-            </div>
+          <div className="sec-1">
+             <img src={props.movie[0].rating_url} id="rating-block" className="col"/>
+             <div className="col" id="prod-release">{props.movie[0].production} | Release Date: {moment(props.movie[0].release_date).format('MMMM Do YYYY')}</div>
+             </div>
           </div>
 
         <div className="starring">
           <span className="heading">Starring: </span>
           <span>{actors}</span>
         </div>
-
 
         <div className="summary">
           <span className="heading">Summary: </span>
