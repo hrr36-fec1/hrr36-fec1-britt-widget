@@ -11,7 +11,7 @@ class App extends React.Component {
     super ();
 
     this.state = {
-      movie: [{url: "", title: "", production: "", release_date: "", summary: "", director: "", rating: "", runtime: "", genre: "", starring: ""}]
+      movie: [{url: "", title: "", production: "", release_date: "", summary: "", director: "", rating: "", runtime: "", genre: [], starring: []}]
 
     }
 
@@ -45,6 +45,8 @@ class App extends React.Component {
 
 
 render() {
+
+
     return (
       <div>
         <h1></h1>

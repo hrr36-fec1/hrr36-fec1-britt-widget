@@ -111,6 +111,12 @@ h1:hover {
   margin-bottom: 5px;
 }
 
+.star:hover {
+  color: #fdd030;
+  cursor: pointer;
+
+}
+
 
 .heading {
   font-weight: bold;
