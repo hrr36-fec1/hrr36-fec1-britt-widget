@@ -2,42 +2,76 @@ import React from 'react';
 const moment = require('moment');
 
 
-const MovieDetailsCredits = (props) => (
-  <div className="main">
-    <h1>Movie Details & Credits</h1>
-      <img src={props.movie[0].url} div className="movie-image" />
-      <img src={props.movie[0].rating_url} div className="rating-block" />
-      <div className="prod-release">{props.movie[0].production} | Release Date: {moment(props.movie[0].release_date).format('MMMM Do YYYY')}</div>
-      <div className="starring">
-        <h3>Starring: </h3>
-          <span>{props.movie[0].starring}</span>
+const MovieDetailsCredits = (props) => {
+
+  const actors = props.movie[0].starring.map((actor, key) =>
+    <span className="star" key={actor}>{actor}</span>
+    );
+
+  return (
+    <div className="main">
+
+    <img src="https://s3-us-west-2.amazonaws.com/bzfec/socialbar.png" className="social"/>
+
+    <div className="flex-container">
+
+      <div className="movie-image">
+        <img src={props.movie[0].url} div className="image" />
       </div>
-      <div className="summary">
-        <h3>Summary: </h3>
+
+      <div className="details">
+        <div className="top-section">
+          <h1>Movie Details & Credits</h1>
+
+          <div className="sec-1">
+             <img src={props.movie[0].rating_url} id="rating-block" className="col"/>
+             <div className="col" id="prod-release">{props.movie[0].production} | Release Date: {moment(props.movie[0].release_date).format('MMMM Do YYYY')}</div>
+             </div>
+          </div>
+
+        <div className="starring">
+          <span className="heading">Starring: </span>
+          <span>{actors}</span>
+        </div>
+
+        <div className="summary">
+          <span className="heading">Summary: </span>
           <span>{props.movie[0].summary}</span>
+        </div>
+
+        <div className="director">
+          <span className="heading">Director: </span>
+          <span id="direct">{props.movie[0].director}</span>
+        </div>
+
+        <div className="genre">
+          <span className="heading">Genre(s): </span>
+          <span>{props.movie[0].genre}</span>
+        </div>
+
+        <div className="rating">
+          <span className="heading">Rating: </span>
+          <span>{props.movie[0].rating}</span>
+        </div>
+
+        <div className="runtime">
+          <span className="heading">Runtime: </span>
+          <span>{props.movie[0].runtime}</span>
+        </div>
+
+        <div className="heading" id="footer">See All Details and Credits</div>
+
       </div>
-      <div className="director">
-        <h3>Director: </h3>
-          <div>{props.movie[0].director}</div>
-      </div>
-      <div className="genre">
-        <h3>Genre(s): </h3>
-          <div>{props.movie[0].genre}</div>
-      </div>
-      <div className="rating">
-        <h3>Rating: </h3>
-          <div>{props.movie[0].rating}</div>
-      </div>
-      <div className="runtime">
-        <h3>Runtime: </h3>
-          <div>{props.movie[0].runtime}</div>
-      </div>
-      <div className="footer">See All Details and Credits</div>
+    </div>
   </div>
-);
+  )
+}
+
 
 export default MovieDetailsCredits;
 
+
+//<span id="actors" >{props.movie[0].starring}</span>
 
 // <div className="create-editor">
 //       <h2>AUTHOR</h2>
