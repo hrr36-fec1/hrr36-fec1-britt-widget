@@ -5,7 +5,7 @@ const {Details, db, save} = require('../database/index.js');
 
 
 let app = express();
-let port = 8081;
+let port = process.env.PORT || 8081;
 
 // app.all('/*', function(req, res, next) {
 //  res.header("Access-Control-Allow-Origin", "*");
@@ -32,16 +32,16 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../')));
 
 
-app.get('http://bzfecservice-env.hi3tgp7xvp.us-east-1.elasticbeanstalk.com/api/movies/details', function (req, res) {
-   Details.find().exec()
-   .then(results => {
-    if (!results){
-      return res.status(500).send({})
-    }
-    //console.log(results);
-    return res.status(200).send(results);
-  })
-});
+// app.get('http://bzfecservice-env.hi3tgp7xvp.us-east-1.elasticbeanstalk.com/api/movies/details', function (req, res) {
+//    Details.find().exec()
+//    .then(results => {
+//     if (!results){
+//       return res.status(500).send({})
+//     }
+//     //console.log(results);
+//     return res.status(200).send(results);
+//   })
+// });
 
 app.get('http://bzfecservice-env.hi3tgp7xvp.us-east-1.elasticbeanstalk.com/api/movies/details/jurassic-park', function (req, res) {
    Details.find({ title: "Jurassic Park"}).exec()
