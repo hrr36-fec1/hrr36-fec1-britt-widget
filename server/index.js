@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../')));
 
 
-app.get('/api/movies/details', function (req, res) {
+app.get('http://bzfecservice-env.hi3tgp7xvp.us-east-1.elasticbeanstalk.com/api/movies/details', function (req, res) {
    Details.find().exec()
    .then(results => {
     if (!results){
@@ -43,7 +43,7 @@ app.get('/api/movies/details', function (req, res) {
   })
 });
 
-app.get('/api/movies/details/jurassic-park', function (req, res) {
+app.get('http://bzfecservice-env.hi3tgp7xvp.us-east-1.elasticbeanstalk.com/api/movies/details/jurassic-park', function (req, res) {
    Details.find({ title: "Jurassic Park"}).exec()
    .then(results => {
     if (!results){
