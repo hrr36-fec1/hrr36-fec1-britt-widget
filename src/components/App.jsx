@@ -26,7 +26,7 @@ class App extends React.Component {
 
   getMovieDetails(){
     $.ajax({
-      url: 'http://bzfecservice-env.hi3tgp7xvp.us-east-1.elasticbeanstalk.com/api/movies/details/jurassic-park',
+      url: '/api/movies/details/jurassic-park',
       method: 'GET',
       context: this,
       success: function(results) {
