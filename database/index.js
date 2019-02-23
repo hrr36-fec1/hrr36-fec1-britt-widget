@@ -39,7 +39,7 @@ let save = (results) => {
     runtime: results.runtime,
     rating_url: results.rating_url
   });
-  //console.log(movieDetails)
+
   movieDetails.save(function(err) {
     if (err) {
       console.log('err saving new movie details to db')
