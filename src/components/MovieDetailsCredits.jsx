@@ -21,7 +21,7 @@ const MovieDetailsCredits = (props) => {
 
       <div className="bz-details">
         <div className="bz-top-section">
-          <div className="bz-h1">Movie Details & Credits</div>
+          <div className="bz-h1">Movie Details & Credits </div>
 
           <div className="bz-sec-1">
              <img src={props.movie[0].rating_url} id="rating-block" className="bz-col"/>
@@ -59,8 +59,7 @@ const MovieDetailsCredits = (props) => {
           <span>{props.movie[0].runtime}</span>
         </div>
 
-        <div className="bz-heading" id="footer">See All Details and Credits</div>
-
+        <a className="bz-heading" id="footer" href="https://www.metacritic.com/movie/jurassic-park/details">See All Details and Credits </a>
       </div>
     </div>
   </div>
