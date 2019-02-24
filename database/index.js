@@ -1,5 +1,5 @@
 const mongoose = require ('mongoose');
-mongoose.connect('mongodb://localhost/details');
+mongoose.connect('mongodb://admin:winnie19@project-fec-0-shard-00-00-4pghd.mongodb.net:27017,project-fec-0-shard-00-01-4pghd.mongodb.net:27017,project-fec-0-shard-00-02-4pghd.mongodb.net:27017/details?ssl=true&replicaSet=Project-fec-0-shard-0&authSource=admin&retryWrites=true', { useNewUrlParser: true });
 
 
 
