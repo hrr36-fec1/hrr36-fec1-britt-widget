@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "webpack -d --watch",
-    "start": "node server/index.js",
+    "start": "nodemon server/index.js",
     "db": "node database/seed.js",
     "lint": "eslint --env browser,jest \"**/*.js\"",
     "test": "jest",

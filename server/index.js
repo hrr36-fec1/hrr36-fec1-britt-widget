@@ -5,7 +5,8 @@ const {Details, db, save} = require('../database/index.js');
 
 
 let app = express();
-let port = process.env.PORT || 8081;
+let port = 3002;
+//process.env.PORT || 8081
 
 // app.all('/*', function(req, res, next) {
 //  res.header("Access-Control-Allow-Origin", "*");
